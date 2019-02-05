@@ -1,0 +1,49 @@
+{
+  "apiVersion": "1.0",
+  "swaggerVersion": "1.2",
+  "basePath": "",
+  "resourcePath": "products",
+  "apis": [
+    {
+      "path": "/products",
+      "operations": [
+        {
+          "summary": "Article",
+          "parameters": [
+            {
+              "paramType": "query",
+              "name": "per_page",
+              "type": "integer",
+              "description": "Per page",
+              "required": false
+            },
+            {
+              "paramType": "query",
+              "name": "page",
+              "type": "integer",
+              "description": "Page number",
+              "required": false
+            },
+            {
+              "paramType": "query",
+              "name": "producer",
+              "type": "string",
+              "description": "Page number",
+              "required": false
+            }
+          ],
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": null,
+              "message": "Ok"
+            }
+          ],
+          "nickname": "Products#index",
+          "method": "get"
+        }
+      ]
+    }
+  ],
+  "authorizations": null
+}
